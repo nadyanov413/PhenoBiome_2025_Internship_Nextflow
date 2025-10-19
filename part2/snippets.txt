@@ -1,0 +1,12 @@
+
+# demo of paratemer + running multiple samples
+nextflow run bio-pipeline.nf --reads 'data/*_{1,2}.fq'
+
+# demo of error + resume (add 5)
+nextflow run bio-pipeline.nf --reads 'data/*_{1,2}.fq' -resume
+
+# saving data in the cloud
+nextflow run bio-pipeline.nf --outdir s3://aws-nextflow-test-bucket/results
+
+# run tasks in the cloud
+nextflow run bio-pipeline.nf -profile batch --outdir s3://aws-nextflow-test-bucket/results -bucket-dir s3://aws-nextflow-test-bucket/work

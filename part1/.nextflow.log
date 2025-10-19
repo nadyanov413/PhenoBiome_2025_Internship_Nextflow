@@ -1,0 +1,96 @@
+Oct-17 14:22:17.820 [main] DEBUG nextflow.cli.Launcher - $> nextflow run two_step_pipeline.nf
+Oct-17 14:22:17.853 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Oct-17 14:22:17.867 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/nadyanovichkova/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Oct-17 14:22:17.888 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-17 14:22:17.889 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-17 14:22:17.890 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Oct-17 14:22:17.895 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-17 14:22:17.922 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Oct-17 14:22:17.930 [main] DEBUG nextflow.cli.CmdRun - Launching `two_step_pipeline.nf` [furious_faraday] DSL2 - revision: 68f6558d53
+Oct-17 14:22:17.930 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-17 14:22:17.930 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-17 14:22:17.959 [main] DEBUG nextflow.Session - Session UUID: a891a980-b387-4fdc-ab77-6215616d6e3e
+Oct-17 14:22:17.959 [main] DEBUG nextflow.Session - Run name: furious_faraday
+Oct-17 14:22:17.959 [main] DEBUG nextflow.Session - Executor pool size: 10
+Oct-17 14:22:17.963 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-17 14:22:17.965 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-17 14:22:17.985 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (04:27 PDT)
+  System: Mac OS X 15.2
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 24.0.2
+  Encoding: UTF-8 (UTF-8)
+  Process: 74940@Mac.lan [192.168.12.123]
+  CPUs: 10 - Mem: 16 GB (72.9 MB) - Swap: 3 GB (1.2 GB)
+Oct-17 14:22:17.995 [main] DEBUG nextflow.Session - Work-dir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work [Mac OS X]
+Oct-17 14:22:17.995 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/bin
+Oct-17 14:22:18.002 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-17 14:22:18.006 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-17 14:22:18.009 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-17 14:22:18.019 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-17 14:22:18.024 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Oct-17 14:22:18.050 [main] DEBUG nextflow.Session - Session start
+Oct-17 14:22:18.293 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-17 14:22:18.298 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/nadyanovichkova/.nextflow/secrets/store.json
+Oct-17 14:22:18.309 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7fedb795] - activable => nextflow.secret.LocalSecretsProvider@7fedb795
+Oct-17 14:22:18.363 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-17 14:22:18.363 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-17 14:22:18.366 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-17 14:22:18.368 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=16 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Oct-17 14:22:18.369 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-17 14:22:18.382 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DownloadProtein': maxForks=0; fair=false; array=0
+Oct-17 14:22:18.395 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-17 14:22:18.395 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-17 14:22:18.396 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'CalculateSequenceLength': maxForks=0; fair=false; array=0
+Oct-17 14:22:18.403 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: CalculateSequenceLength, DownloadProtein
+Oct-17 14:22:18.403 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Oct-17 14:22:18.406 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DownloadProtein
+Oct-17 14:22:18.406 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CalculateSequenceLength
+Oct-17 14:22:18.406 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_e1b42366b7b66546: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/two_step_pipeline.nf
+Oct-17 14:22:18.406 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-17 14:22:18.406 [main] DEBUG nextflow.Session - Session await
+Oct-17 14:22:18.481 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:18.482 [Task submitter] INFO  nextflow.Session - [79/cfd35a] Submitted process > DownloadProtein (3)
+Oct-17 14:22:18.488 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:18.489 [Task submitter] INFO  nextflow.Session - [4d/d1730b] Submitted process > DownloadProtein (1)
+Oct-17 14:22:18.494 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:18.495 [Task submitter] INFO  nextflow.Session - [db/eafbd7] Submitted process > DownloadProtein (5)
+Oct-17 14:22:18.498 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:18.499 [Task submitter] INFO  nextflow.Session - [eb/2f7ebf] Submitted process > DownloadProtein (2)
+Oct-17 14:22:18.505 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:18.506 [Task submitter] INFO  nextflow.Session - [c7/d20911] Submitted process > DownloadProtein (4)
+Oct-17 14:22:19.683 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: DownloadProtein (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/db/eafbd78a9e2d583bc5399a3ab259c3]
+Oct-17 14:22:19.683 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-17 14:22:19.684 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: DownloadProtein (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/eb/2f7ebf689e2045a3dcb1f23336af70]
+Oct-17 14:22:19.685 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: DownloadProtein (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/c7/d20911c62f83aa7943d87c4c7db77b]
+Oct-17 14:22:19.699 [TaskFinalizer-3] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-17 14:22:19.708 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:19.709 [Task submitter] INFO  nextflow.Session - [4b/d5c932] Submitted process > CalculateSequenceLength (3)
+Oct-17 14:22:19.711 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:19.711 [Task submitter] INFO  nextflow.Session - [1b/fa70e5] Submitted process > CalculateSequenceLength (1)
+Oct-17 14:22:19.713 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:19.714 [Task submitter] INFO  nextflow.Session - [8b/50daf3] Submitted process > CalculateSequenceLength (2)
+Oct-17 14:22:19.936 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: CalculateSequenceLength (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/1b/fa70e5493dba5d39ec7ffba48cba81]
+Oct-17 14:22:19.937 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: CalculateSequenceLength (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/8b/50daf3e24141f8aa07cbb60c90f401]
+Oct-17 14:22:20.041 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: CalculateSequenceLength (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/4b/d5c93221a04d7ea942bcb8723576dd]
+Oct-17 14:22:21.623 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: DownloadProtein (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/79/cfd35a48e37d85b1d5a7724878ea2d]
+Oct-17 14:22:21.623 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: DownloadProtein (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/4d/d1730b2ad0ab76de29f8349556d3af]
+Oct-17 14:22:21.629 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:21.629 [Task submitter] INFO  nextflow.Session - [1c/21b98a] Submitted process > CalculateSequenceLength (4)
+Oct-17 14:22:21.631 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:22:21.631 [Task submitter] INFO  nextflow.Session - [e6/bc9c32] Submitted process > CalculateSequenceLength (5)
+Oct-17 14:22:21.740 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: CalculateSequenceLength (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/1c/21b98a83bc8d4fc35eb556815bee9c]
+Oct-17 14:22:21.741 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: CalculateSequenceLength (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/e6/bc9c323034944acf7a9980b91e6d83]
+Oct-17 14:22:21.742 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-17 14:22:21.750 [Actor Thread 4] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 5; slices: 1; internal sort time: 0.006 s; external sort time: 0.001 s; total time: 0.007 s
+Oct-17 14:22:21.751 [Actor Thread 4] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part1/work/collect-file/1dc4118172c25dfb93fea79a65fb0bfd
+Oct-17 14:22:21.756 [Actor Thread 4] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /var/folders/qb/k564ldj93895957s6mqbn6ym0000gn/T/nxf-8196824729968671605
+Oct-17 14:22:21.842 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-17 14:22:21.842 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-17 14:22:21.844 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Oct-17 14:22:21.844 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Oct-17 14:22:21.848 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=10; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=10s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=5; peakCpus=5; peakMemory=0; ]
+Oct-17 14:22:21.964 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-17 14:22:21.972 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-17 14:22:21.972 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

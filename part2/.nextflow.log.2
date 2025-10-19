@@ -1,0 +1,92 @@
+Oct-17 14:38:02.434 [main] DEBUG nextflow.cli.Launcher - $> nextflow run bio-pipeline.nf --reads 'data/*_{1,2}.fq' -resume
+Oct-17 14:38:02.469 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Oct-17 14:38:02.481 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/nadyanovichkova/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Oct-17 14:38:02.499 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-17 14:38:02.499 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-17 14:38:02.500 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Oct-17 14:38:02.505 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-17 14:38:02.514 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/nextflow.config
+Oct-17 14:38:02.515 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/nextflow.config
+Oct-17 14:38:02.530 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/nadyanovichkova/.nextflow/secrets/store.json
+Oct-17 14:38:02.531 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@61e45f87] - activable => nextflow.secret.LocalSecretsProvider@61e45f87
+Oct-17 14:38:02.537 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-17 14:38:02.738 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Oct-17 14:38:02.745 [main] DEBUG nextflow.cli.CmdRun - Launching `bio-pipeline.nf` [pensive_neumann] DSL2 - revision: 2f8c26269b
+Oct-17 14:38:02.745 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-17 14:38:02.745 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-17 14:38:02.768 [main] DEBUG nextflow.Session - Session UUID: 2148fba3-9c18-480e-9339-bc40f025dbe9
+Oct-17 14:38:02.768 [main] DEBUG nextflow.Session - Run name: pensive_neumann
+Oct-17 14:38:02.768 [main] DEBUG nextflow.Session - Executor pool size: 10
+Oct-17 14:38:02.771 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-17 14:38:02.773 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-17 14:38:02.868 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (04:27 PDT)
+  System: Mac OS X 15.2
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 24.0.2
+  Encoding: UTF-8 (UTF-8)
+  Process: 76989@Mac.lan [192.168.12.123]
+  CPUs: 10 - Mem: 16 GB (233.7 MB) - Swap: 3 GB (1.2 GB)
+Oct-17 14:38:02.876 [main] DEBUG nextflow.Session - Work-dir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work [Mac OS X]
+Oct-17 14:38:02.876 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/bin
+Oct-17 14:38:02.881 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-17 14:38:02.885 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-17 14:38:02.887 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-17 14:38:02.896 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-17 14:38:02.900 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Oct-17 14:38:02.935 [main] DEBUG nextflow.Session - Session start
+Oct-17 14:38:03.093 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-17 14:38:03.098 [main] INFO  nextflow.Nextflow - R N A S E Q - N F   P I P E L I N E
+===================================
+transcriptome: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/data/transcriptome.fa 
+reads        : data/*_{1,2}.fq
+outdir       : results
+
+Oct-17 14:38:03.159 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-17 14:38:03.159 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-17 14:38:03.161 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-17 14:38:03.164 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=16 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Oct-17 14:38:03.164 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-17 14:38:03.173 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'INDEX': maxForks=0; fair=false; array=0
+Oct-17 14:38:03.193 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-17 14:38:03.193 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-17 14:38:03.193 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QUANTIFICATION': maxForks=0; fair=false; array=0
+Oct-17 14:38:03.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-17 14:38:03.197 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-17 14:38:03.197 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
+Oct-17 14:38:03.204 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-17 14:38:03.204 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-17 14:38:03.205 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MULTIQC': maxForks=0; fair=false; array=0
+Oct-17 14:38:03.206 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, QUANTIFICATION, MULTIQC, INDEX
+Oct-17 14:38:03.207 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Oct-17 14:38:03.208 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *_{1,2}.fq; options: [checkIfExists:true]
+Oct-17 14:38:03.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > INDEX
+Oct-17 14:38:03.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QUANTIFICATION
+Oct-17 14:38:03.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+Oct-17 14:38:03.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC
+Oct-17 14:38:03.209 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_21c92efbb266b8e5: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/bio-pipeline.nf
+Oct-17 14:38:03.209 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-17 14:38:03.209 [main] DEBUG nextflow.Session - Session await
+Oct-17 14:38:03.283 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [a1/fa9f04] Cached process > FASTQC (3)
+Oct-17 14:38:03.283 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [46/7ac9c7] Cached process > INDEX (1)
+Oct-17 14:38:03.283 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [68/eee3c6] Cached process > FASTQC (1)
+Oct-17 14:38:03.283 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [4a/cb3692] Cached process > FASTQC (2)
+Oct-17 14:38:03.294 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [0b/4771d7] Cached process > QUANTIFICATION (1)
+Oct-17 14:38:03.300 [Actor Thread 12] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-17 14:38:03.326 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-17 14:38:03.327 [Task submitter] INFO  nextflow.Session - [eb/975192] Submitted process > MULTIQC
+Oct-17 14:38:07.195 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: MULTIQC; status: COMPLETED; exit: 0; error: -; workDir: /Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380]
+Oct-17 14:38:07.195 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-17 14:38:07.199 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-17 14:38:07.297 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-17 14:38:07.297 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-17 14:38:07.298 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Oct-17 14:38:07.298 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Oct-17 14:38:07.300 [main] INFO  nextflow.Nextflow - 
+Done! Open the following report in your browser --> results/multiqc_report.html
+
+Oct-17 14:38:07.303 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=5; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3.8s; failedDuration=0ms; cachedDuration=14.6s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Oct-17 14:38:07.459 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-17 14:38:07.466 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-17 14:38:07.467 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
