@@ -1,8 +1,0 @@
-Module	Section	Sample Name	Source
-FastQC	all_sections	liver_2	/Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380/fastqc_liver_logs/liver_2_fastqc.zip
-FastQC	all_sections	lung_2	/Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380/fastqc_lung_logs/lung_2_fastqc.zip
-FastQC	all_sections	lung_1	/Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380/fastqc_lung_logs/lung_1_fastqc.zip
-FastQC	all_sections	liver_1	/Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380/fastqc_liver_logs/liver_1_fastqc.zip
-FastQC	all_sections	gut_1	/Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380/fastqc_gut_logs/gut_1_fastqc.zip
-FastQC	all_sections	gut_2	/Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380/fastqc_gut_logs/gut_2_fastqc.zip
-Salmon	all_sections	liver	/Users/nadyanovichkova/Projects/PhenoBiome2025/final-project/part2/work/eb/975192421190e3ad914a872dfc9380/liver/libParams/flenDist.txt

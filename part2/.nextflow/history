@@ -1,6 +1,0 @@
-2025-10-17 14:34:00	7.4s	infallible_meitner	OK	2f8c26269bb4adff9cec835290a2dc91	e93a5914-ca71-4638-8dae-2cab041810fa	nextflow run bio-pipeline.nf
-2025-10-17 14:36:07	9.4s	hungry_blackwell	OK	2f8c26269bb4adff9cec835290a2dc91	163f0c0b-0e3c-47c7-814c-a8ec0d548ca4	nextflow run bio-pipeline.nf --reads 'data/*_{1,2}.fq'
-2025-10-17 14:37:02	6.2s	sick_babbage	ERR	2740316fe5ad4d0a849c1f38a4d3674b	2148fba3-9c18-480e-9339-bc40f025dbe9	nextflow run bio-pipeline.nf --reads 'data/*_{1,2}.fq'
-2025-10-17 14:38:02	5.5s	pensive_neumann	OK	2f8c26269bb4adff9cec835290a2dc91	2148fba3-9c18-480e-9339-bc40f025dbe9	nextflow run bio-pipeline.nf --reads 'data/*_{1,2}.fq' -resume
-2025-10-17 14:44:12	1m 6s	berserk_knuth	OK	2f8c26269bb4adff9cec835290a2dc91	dd383c43-d421-4fec-9ff4-f1cf941c5b81	nextflow run bio-pipeline.nf --outdir 's3://aws-nextflow-test-bucket/results'
-2025-10-17 14:49:30	3m 12s	goofy_turing	OK	85d6072a9156ad6bf05e1abcab1d0d61	f81a213d-5bfb-4968-85e8-05aaf68538bb	nextflow run bio-pipeline.nf -profile batch --outdir 's3://aws-nextflow-test-bucket/results' -bucket-dir 's3://aws-nextflow-test-bucket/work'

@@ -1,8 +1,0 @@
-curl: (22) The requested URL returned error: 429
- ERROR:  curl command failed ( Fri Oct 17 14:22:18 PDT 2025 ) with: 22
--X POST https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi -d db=protein&id=NP_001186746&rettype=fasta&retmode=text&tool=edirect&edirect=24.7&edirect_os=Darwin&email=nadyanovichkova%40Mac.lan
-HTTP/1.1 429 Too Many Requests
- WARNING:  FAILURE ( Fri Oct 17 14:22:18 PDT 2025 )
-nquire -url https://eutils.ncbi.nlm.nih.gov/entrez/eutils/ efetch.fcgi -db protein -id NP_001186746 -rettype fasta -retmode text -tool edirect -edirect 24.7 -edirect_os Darwin -email nadyanovichkova@Mac.lan
-EMPTY RESULT
-SECOND ATTEMPT
